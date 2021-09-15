@@ -12,6 +12,7 @@ Features:
 
 
 # After wiping your macbook
+You went through the process of pressing command + r while booting, you selected disk utilities and cleaned the hard drive. Pressed install Mac OS and now reach this page, what do you do?
 
 ## Update OS
 System Settings -> Software Update
@@ -43,18 +44,14 @@ But get cool stuff like being able to sudo with 💅 TOUCH ID 💅
 ./mac-os-defaults.sh
 ```
 
-## Fix iTerm2
-### Import the Snazzy Theme for relaxed colours
-Go to iTerm2's settings -> profiles -> colours -> colour presets -> import and select [this file](./Snazzy.itermcolors)
-
-### Import the iTerm settings
+## Install iTerm2 Settings
 Go to iTerm2's settings -> general -> preferences -> load from file -> select [this bad boy](./com.googlecode.iterm2.plist)
+This will already include the colour scheme, the font etc. 
 
 ## Toss in the .zshrc
 Modify the [zsh config](./zshrc) or not and toss it in the home directory
 
-
 ## Done
-You shall now not have some matrix colour theme but rather some soothing colours to look at while you hack away.
+You shall now not have some matrix colour theme but rather some soothing colours to look at while you hack away. You probably want to configure git and some ssh keys and maybe a vimrc and some other stuff but this should suffice.
 
 
