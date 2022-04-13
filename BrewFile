@@ -66,6 +66,7 @@ brew 'ssldump'
 brew 'tcpdump'
 brew 'telnet'
 brew 'tldr'
+brew 'delta'
 
 # Casks
 cask 'google-chrome'
