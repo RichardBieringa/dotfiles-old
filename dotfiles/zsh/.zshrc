@@ -9,7 +9,6 @@ HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(
   aws
-  cargo
   colored-man-pages
   docker
   docker-compose
