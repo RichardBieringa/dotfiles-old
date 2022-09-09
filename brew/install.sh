@@ -18,7 +18,7 @@ fi
 # install them if they are not
 if ! brew bundle check
 then
-    echo "Installing brew files"
+    echo "Installing homebrew packages"
     brew bundle install --file "${SCRIPT_DIR}/BrewFile"
 fi
 
