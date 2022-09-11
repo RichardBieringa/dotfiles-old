@@ -21,9 +21,10 @@ plugins=(
   rust
 )
 
+
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR='nvim'
 
 # Symlinking GNU utils over BSD equivalents
