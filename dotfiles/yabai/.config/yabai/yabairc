@@ -5,7 +5,7 @@ sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # Configures the position of the status bar
-yabai -m config external_bar               all:40:0
+yabai -m config external_bar               all:47:0
 
 # general space settings
 yabai -m config layout                       bsp
