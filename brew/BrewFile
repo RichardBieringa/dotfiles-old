@@ -5,7 +5,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap 'homebrew/cask-fonts'
 tap 'homebrew/services'
-tap 'koekeishiya/formulae'
+tap 'koekeishiya/formulae' # yabai
+tap 'FelixKratz/formulae'  # sketchybar
 
 
 # GNU Utils
@@ -54,12 +55,16 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'ripgrep'
 brew 'shellcheck'
+brew 'skhd'
 brew 'ssldump'
 brew 'starship'
 brew 'tcpdump'
 brew 'telnet'
 brew 'tldr'
 brew 'tmux'
+
+# Window Manager + Status Bar
+brew 'sketchybar'
 brew 'yabai'
 
 
@@ -70,5 +75,9 @@ cask '1password'
 cask 'docker'
 cask 'slack'
 cask 'spotify'
+
+
+# Fonts
 cask 'font-fira-code'
 cask 'font-jetbrains-mono'
+cask 'font-hack-nerd-font'
