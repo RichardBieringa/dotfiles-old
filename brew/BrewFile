@@ -47,6 +47,7 @@ brew 'ffmpeg'
 brew 'fzf'
 brew 'gh'
 brew 'git'
+brew 'ifstat'
 brew 'jq'
 brew 'neovim'
 brew 'openssh'
@@ -77,7 +78,8 @@ cask 'slack'
 cask 'spotify'
 
 
-# Fonts
+# Fonts / icons
 cask 'font-fira-code'
 cask 'font-jetbrains-mono'
 cask 'font-hack-nerd-font'
+cask 'sf-icons'
