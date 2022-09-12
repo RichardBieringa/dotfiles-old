@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 STOW_ROOT = $(realpath dotfiles)
 STOW_PACKAGES = $(notdir $(wildcard $(STOW_ROOT)/*))
 
@@ -24,3 +26,7 @@ restow :
 .PHONY : delete
 delete :
 	stow --dir $(STOW_ROOT) --target $(HOME) --verbose --delete $(STOW_PACKAGES)
+
+.PHONY : brew
+brew :
+	./brew/install.sh
