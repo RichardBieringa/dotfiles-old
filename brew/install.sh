@@ -16,7 +16,7 @@ fi
 
 # Check if all packages in 'BrewFile' are installed
 # install them if they are not
-if ! brew bundle check
+if ! brew bundle check --file "${SCRIPT_DIR}/BrewFile"
 then
     echo "Installing homebrew packages"
     brew bundle install --file "${SCRIPT_DIR}/BrewFile"

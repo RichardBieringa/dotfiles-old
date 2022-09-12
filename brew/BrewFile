@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap 'homebrew/cask-fonts'
 tap 'homebrew/services'
+tap 'koekeishiya/formulae'
 
 
 # GNU Utils
@@ -58,6 +59,8 @@ brew 'starship'
 brew 'tcpdump'
 brew 'telnet'
 brew 'tldr'
+brew 'tmux'
+brew 'yabai'
 
 
 # General Casks
