@@ -81,5 +81,6 @@ cask 'spotify'
 # Fonts / icons
 cask 'font-fira-code'
 cask 'font-jetbrains-mono'
+cask 'font-jetbrains-mono-nerd-font'
 cask 'font-hack-nerd-font'
 cask 'sf-symbols'
