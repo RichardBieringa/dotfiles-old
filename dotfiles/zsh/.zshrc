@@ -19,8 +19,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-export XDG_CONFIG_HOME=$HOME/.config
-export EDITOR='nvim'
 
 # Symlinking GNU utils over BSD equivalents
 # https://gist.github.com/skyzyx/3438280b18e4f7c490db8a2a2ca0b9da
