@@ -1,3 +1,7 @@
+# open application shortcuts
+cmd + alt - return : open -na "/Applications/Alacritty.app"
+cmd + alt - b : open -na "/Applications/Google Chrome.app"
+
 # prevent hide shortcut
 cmd - h : :
 
