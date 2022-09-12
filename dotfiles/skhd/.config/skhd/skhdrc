@@ -33,7 +33,7 @@ lctrl + alt - 0 : yabai -m space --balance
 alt - r : yabai -m space --rotate 90
 
 # toggle window fullscreen zoom/native
-alt - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen; sketchybar --trigger window_focus
 shift + alt - f : yabai -m window --toggle native-fullscreen
 
 # toggle padding and gap
@@ -41,7 +41,8 @@ alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # toggle float / unfloat window and center on screen
 alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
+          yabai -m window --grid 4:4:1:1:2:2;\
+          sketchybar --trigger window_focus
 
 # toggle window split type
 alt - e : yabai -m window --toggle split
