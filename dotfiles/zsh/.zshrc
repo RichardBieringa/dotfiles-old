@@ -8,15 +8,10 @@ ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(
-  aws
-  colored-man-pages
   docker
-  docker-compose
   dotenv
   fzf
-  gcloud
   git
-  kubectl
   ripgrep
   rust
 )
