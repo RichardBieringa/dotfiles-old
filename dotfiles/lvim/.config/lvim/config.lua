@@ -19,6 +19,8 @@ lvim.colorscheme = "onedarker"
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["<C-/>"] = "gcc"
+lvim.keys.insert_mode["<C-/>"] = "gcc"
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
@@ -181,3 +183,8 @@ lvim.builtin.treesitter.highlight.enabled = true
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
+
+
+vim.opt.number = true -- set numbered lines
+vim.opt.relativenumber = true -- set relative numbered --[[ lines --[[ ]] ]]
+vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
