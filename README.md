@@ -34,4 +34,8 @@ There are some additional settings to change for my MacOS setup:
 
 ```sh
 sudo make macos
+
+
+# only installs brew and brew packages
+make brew
 ```
