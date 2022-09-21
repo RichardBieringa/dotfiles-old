@@ -27,6 +27,12 @@ restow :
 delete :
 	stow --dir $(STOW_ROOT) --target $(HOME) --verbose --delete $(STOW_PACKAGES)
 
+.PHONY : macos
+macos :
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	./mac-os-defaults.sh
+	./brew/install.sh
+
 .PHONY : brew
 brew :
 	./brew/install.sh

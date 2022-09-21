@@ -1,57 +1,38 @@
-# Richard's Mac OS Development Environment
+# Richard's Dotfiles
 
-After formatting my laptop one too many times I have created a very basic development environment setup. Making automated install scripts seems to be more of a hassle than a time saver so I just got this quick documentation here
+My configuration files for the tools that I use such as nvim.
+
+Depends on [GNU make](https://www.gnu.org/software/make/) and [GNU stow](https://www.gnu.org/software/stow/).
 
 
-Features:
+### Features:
 - 🖥 zsh + oh my zsh
 - 🚀 Starship as a fancy $PS1 
 - 🍺 Basic Brew packages so I don't have to install it all again
-- ✨ GNU > Mac OS (BSD) default utils (amazing portability)
--  Sane Mac OS defaults
+- ✨ GNU > Mac OS (BSD) default utils
+- 🍎 Sane Mac OS defaults
+- 👑 yabai window manager configuration
 
 
-# After wiping your macbook
-You went through the process of pressing command + r while booting, you selected disk utilities and cleaned the hard drive. Pressed install Mac OS and now reach this page, what do you do?
+### Usage 
 
-## Update OS
-System Settings -> Software Update
+To copy all the dotfiles to the home directory execute the following command:
 
-## Install MacOS Command Line tools
 ```sh
-sudo xcode-select --install
+$ make stow
 ```
 
-## Install Homebrew
+### MacOS specific steps
+
+There are some additional settings to change for my MacOS setup:
+- Set up sane MacOS defaults
+- Install Oh My Zsh
+- Install brew package manager, and a list of packages
+
+
+**Note:** Requires elevated privileges for setting MacOS defaults
+
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# sudo make macos
 ```
-
-## Install some homebrew packages
-This will install the packages in the [BrewFile](./BrewFile)
-```sh
-brew bundle
-```
-
-## Install Oh My Zsh
-```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-## Run this dangerous script which changes OSX settings
-But get cool stuff like being able to sudo with 💅 TOUCH ID 💅
-```sh
-./mac-os-defaults.sh
-```
-
-## Install iTerm2 Settings
-Go to iTerm2's settings -> general -> preferences -> load from file -> select [this bad boy](./com.googlecode.iterm2.plist)
-This will already include the colour scheme, the font etc. 
-
-## Toss in the .zshrc
-Modify the [zsh config](./zshrc) or not and toss it in the home directory
-
-## Done
-You shall now not have some matrix colour theme but rather some soothing colours to look at while you hack away. You probably want to configure git and some ssh keys and maybe a vimrc and some other stuff but this should suffice.
-
-
