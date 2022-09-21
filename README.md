@@ -19,7 +19,7 @@ Depends on [GNU make](https://www.gnu.org/software/make/) and [GNU stow](https:/
 To copy all the dotfiles to the home directory execute the following command:
 
 ```sh
-$ make stow
+make stow
 ```
 
 ### MacOS specific steps
@@ -33,6 +33,5 @@ There are some additional settings to change for my MacOS setup:
 **Note:** Requires elevated privileges for setting MacOS defaults
 
 ```sh
-
-# sudo make macos
+sudo make macos
 ```
