@@ -27,7 +27,7 @@ local options = {
     backup = false,
 
     -- enables long running undos
-    undodir = "~/.vim/undodir",
+    undodir = os.getenv("HOME") .. "/.vim/undodir",
     undofile = true,
 
     -- search settings
@@ -62,6 +62,9 @@ local options = {
     -- split position
     splitbelow = true,
     splitright = true,
+
+    -- enables a better completion experience
+    completeopt = "menuone,noselect",
 }
 
 for k, v in pairs(options) do
