@@ -30,6 +30,9 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", map_args)
 vim.keymap.set("n", "<S-h>", ":bprev<CR>", map_args)
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", map_args)
 
+-- file tree explorer
+vim.keymap.set("n", "<leader>e", ":Lex 30<CR>", map_args)
+
 -- modify existing commands to center cursor
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

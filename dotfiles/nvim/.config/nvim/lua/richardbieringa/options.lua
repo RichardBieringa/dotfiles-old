@@ -60,7 +60,7 @@ local options = {
     showtabline = 2,
 
     -- split position
-    splitbelow = true,
+    splitbelow = false,
     splitright = true,
 
     -- enables a better completion experience
