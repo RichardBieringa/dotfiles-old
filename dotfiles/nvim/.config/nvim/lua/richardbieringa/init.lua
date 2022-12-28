@@ -1,2 +1,6 @@
-require("richardbieringa.remap")
-require("richardbieringa.set")
+-- vim / nvim options
+require("richardbieringa.options")
+
+-- custom keymap settings
+-- note: extension specific settings in after/lua dir
+require("richardbieringa.keymap")
