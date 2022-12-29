@@ -65,6 +65,10 @@ local options = {
 
     -- enables a better completion experience
     completeopt = "menuone,noselect",
+
+    -- show whitespace
+    list = true,
+    listchars = "tab:> ,trail:-,nbsp:+,eol:↴",
 }
 
 for k, v in pairs(options) do
