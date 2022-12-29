@@ -4,16 +4,16 @@ SHELL := /bin/bash
 # see: https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
 XDG_CONFIG_HOME ?= $(HOME)/.config/
 
-CURR_DIR = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-STOW_ROOT = configs
+STOW_ROOT = $(realpath configs)
+STOW_PACKAGES = $(notdir $(wildcard $(STOW_ROOT)/*))
 
 .PHONY : install
 install : ## Install (symlink) all dotfiles.
-	stow --dir $(CURR_DIR) --target $(XDG_CONFIG_HOME) --verbose $(STOW_ROOT)
+	stow --dir $(STOW_ROOT) --target $(XDG_CONFIG_HOME) --verbose $(STOW_PACKAGES)
 
 .PHONY : clean
 clean : ## Removes all the symlinks.
-	stow --dir $(CURR_DIR) --target $(XDG_CONFIG_HOME) --verbose --delete $(STOW_ROOT)
+	stow --dir $(STOW_ROOT) --target $(XDG_CONFIG_HOME) --verbose --delete $(STOW_PACKAGES)
 
 .PHONY : macos
 macos : ## Installs Mac OS specifics.
