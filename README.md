@@ -15,6 +15,21 @@ Depends on [GNU make](https://www.gnu.org/software/make/) and [GNU stow](https:/
 
 ## Installation 
 
+Clone the repository with submodules
+
+```sh
+git clone --recurse-submodules https://github.com/RichardBieringa/dotfiles.git
+```
+
+Or initialize submodules afterwards
+
+```sh
+git submodule init 
+git submodule update
+```
+
+Symlink the configuration files
+
 ```sh
 make install
 ```
