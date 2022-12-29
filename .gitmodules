@@ -1,6 +1,6 @@
-[submodule "dotfiles/personal"]
-	path = dotfiles/personal
+[submodule "configs/personal-configs"]
+	path = personal-configs
 	url = git@github.com:RichardBieringa/dotfiles-personal.git
-[submodule "dotfiles/nvim"]
-	path = dotfiles/nvim
+[submodule "configs/NvChad"]
+	path = configs/nvim
 	url = https://github.com/NvChad/NvChad
