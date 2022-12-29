@@ -11,15 +11,12 @@ Depends on [GNU make](https://www.gnu.org/software/make/) and [GNU stow](https:/
 - 🍺 Basic Brew packages so I don't have to install it all again
 - ✨ GNU > Mac OS (BSD) default utils
 - 🍎 Sane Mac OS defaults
-- 👑 yabai window manager configuration
 
 
-### Usage 
-
-To copy all the dotfiles to the home directory execute the following command:
+## Installation 
 
 ```sh
-make stow
+make install
 ```
 
 ### MacOS specific steps
@@ -39,3 +36,10 @@ sudo make macos
 # only installs brew and brew packages
 make brew
 ```
+
+## Uninstall
+
+```sh
+make clean
+```
+
