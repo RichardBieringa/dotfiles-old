@@ -8,7 +8,7 @@ STOW_ROOT = $(realpath configs)
 STOW_PACKAGES = $(notdir $(wildcard $(STOW_ROOT)/*))
 
 .PHONY : install
-install : ## Install (symlink) all dotfiles.
+install : zsh ## Install (symlink) all dotfiles.
 	stow --dir $(STOW_ROOT) --target $(XDG_CONFIG_HOME) --verbose $(STOW_PACKAGES)
 
 .PHONY : clean
@@ -24,6 +24,11 @@ macos : ## Installs Mac OS specifics.
 .PHONY : brew
 brew : ## Installs brew packages.
 	./brew/install.sh
+
+.PHONY : zsh
+zsh : ## Sets the zsh configuration directory
+	@echo "Generating $$HOME/.zshenv file to set zsh configuration directory."
+	@printf 'export ZDOTDIR="$$HOME/.config/zsh"\nsource -- "$$ZDOTDIR/.zshenv"\n' > ~/.zshenv
 
 
 .PHONY : help
