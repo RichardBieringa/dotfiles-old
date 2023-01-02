@@ -4,6 +4,8 @@
 # | |__| |_| | |  | |  __/| |___| |___  | |  | | |_| | |\  |
 #  \____\___/|_|  |_|_|   |_____|_____| |_| |___\___/|_| \_|
  #
+ # TODO: read blog post and update
+ # https://thevaluable.dev/zsh-completion-guide-examples/
 
 # +---------+
 # | General |
