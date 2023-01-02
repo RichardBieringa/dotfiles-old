@@ -1,0 +1,22 @@
+# User Environment Variables
+# we should define $ZDOTDIR in  $HOME/.zshenv
+
+# https://wiki.archlinux.org/title/XDG_Base_Directory
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
+export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
+export XGD_STATE_HOME="$HOME/.local/state"
+
+# zsh configuration directory
+# https://zsh.sourceforge.io/Intro/intro_3.html
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# history settings
+export HISTFILE="$ZDOTDIR/.zhistory"
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+# default applications 
+export EDITOR="nvim"
+export VISUAL="nvim"
+export PAGER="less"
