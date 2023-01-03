@@ -1,6 +1,3 @@
 [submodule "configs/personal"]
 	path = configs/personal
 	url = git@github.com:RichardBieringa/dotfiles-personal.git
-[submodule "configs/nvchad/nvim"]
-	path = configs/nvchad/nvim
-	url = git@github.com:NvChad/NvChad.git
