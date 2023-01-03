@@ -20,3 +20,14 @@ export SAVEHIST=10000
 export EDITOR="nvim"
 export VISUAL="nvim"
 export PAGER="less"
+
+# node
+export NVM_DIR="$HOME/.config/nvm"
+
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+
+# path
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"  # local binaries
+export PATH="$HOME/.cargo/env:$PATH"            # cargo
+export PATH="$PYENV_ROOT/bin:$PATH"             # python

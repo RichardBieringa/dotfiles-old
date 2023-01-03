@@ -36,5 +36,10 @@ for f in "$ZDOTDIR/plugins"; do
     source $f;
 done
 
+# Language specific
+source "$NVM_DIR/nvm.sh"        # node version manager
+source "$HOME/.cargo/env"       # cargo (rust)
+eval "$(pyenv init -)"          # python
+
 # Prompt
 eval "$(starship init zsh)"
