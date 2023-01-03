@@ -18,7 +18,8 @@ local sources = {
     -- cpp
     b.formatting.clang_format,
 
-    -- python
+    -- php
+    b.formatting.phpcsfixer,
 }
 
 null_ls.setup {
